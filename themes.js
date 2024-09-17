@@ -1,7 +1,0 @@
-const Themes = {
-  primary: "#1ca7f1",
-  secondary: "#ffc9c9",
-  success: "#01ff01",
-  error: "#ff0101",
-  warning: "#d1e100",
-};
