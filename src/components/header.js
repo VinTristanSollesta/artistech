@@ -38,17 +38,17 @@ const Header = () => {
       <nav
         className={`${
           isOpen ? "block" : "hidden"
-        } absolute top-16 left-0 w-full bg-blue-400 md:flex md:relative md:top-0 md:left-0 md:w-auto md:bg-transparent items-center space-x-4 md:space-x-10 pr-4 md:pr-10`}
+        } absolute top-16 left-0 w-full bg-blue-400 md:flex md:relative md:top-0 md:left-0 md:w-auto md:bg-transparent items-center md:space-x-10 pr-4 md:px-10`}
       >
         <a
           href="#"
-          className="block text-black text-sm md:text-lg py-2 md:py-0"
+          className="block text-black text-sm md:text-lg py-2 md:py-0 w-full text-center"
         >
           Home
         </a>
         <a
           href="#"
-          className="block text-black text-sm md:text-lg py-2 md:py-0"
+          className="block text-black text-sm md:text-lg py-2 md:py-0 w-full text-center"
         >
           About
         </a>
@@ -57,7 +57,7 @@ const Header = () => {
         <div className="relative group">
           <a
             href="#"
-            className="block text-black text-sm md:text-lg py-2 md:py-0"
+            className="block text-black text-sm md:text-lg py-2 md:py-0 w-full text-center"
           >
             Guilds
           </a>
@@ -99,7 +99,7 @@ const Header = () => {
 
         <a
           href="#"
-          className="block text-black text-sm md:text-lg py-2 md:py-0"
+          className="block text-black text-sm md:text-lg py-2 md:py-0 w-full text-center"
         >
           Contact
         </a>
