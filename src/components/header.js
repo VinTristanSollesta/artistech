@@ -1,25 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false); // State to manage menu visibility
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen); // Toggle the menu
+  };
+
   return (
-    <header className="relative h-16 flex items-center">
+    <header className="relative h-16 flex items-center justify-between px-4 md:px-10 bg-blue-400">
       {/* Left Section - Logo */}
       <div className="bg-pink-300 h-full w-1/3 md:w-1/6 flex items-center justify-center">
         <span className="text-sm md:text-lg font-bold">Logo</span>
       </div>
 
+      {/* Hamburger Icon for Mobile */}
+      <div className="md:hidden">
+        <button onClick={toggleMenu} className="text-black">
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+            ></path>
+          </svg>
+        </button>
+      </div>
+
       {/* Right Section - Navigation */}
-      <div className="bg-blue-400 h-full flex-1 flex justify-end items-center space-x-4 md:space-x-10 pr-4 md:pr-10 relative">
-        <a href="#" className="text-black text-sm md:text-lg">
+      <nav
+        className={`${
+          isOpen ? "block" : "hidden"
+        } absolute top-16 left-0 w-full bg-blue-400 md:flex md:relative md:top-0 md:left-0 md:w-auto md:bg-transparent items-center space-x-4 md:space-x-10 pr-4 md:pr-10`}
+      >
+        <a
+          href="#"
+          className="block text-black text-sm md:text-lg py-2 md:py-0"
+        >
           Home
         </a>
-        <a href="#" className="text-black text-sm md:text-lg">
+        <a
+          href="#"
+          className="block text-black text-sm md:text-lg py-2 md:py-0"
+        >
           About
         </a>
 
         {/* Guilds with Dropdown */}
         <div className="relative group">
-          <a href="#" className="text-black text-sm md:text-lg">
+          <a
+            href="#"
+            className="block text-black text-sm md:text-lg py-2 md:py-0"
+          >
             Guilds
           </a>
 
@@ -58,10 +97,13 @@ const Header = () => {
           </div>
         </div>
 
-        <a href="#" className="text-black text-sm md:text-lg">
+        <a
+          href="#"
+          className="block text-black text-sm md:text-lg py-2 md:py-0"
+        >
           Contact
         </a>
-      </div>
+      </nav>
     </header>
   );
 };
