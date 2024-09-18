@@ -10,6 +10,9 @@ module.exports = {
         error: "#ff0101",
         warning: "#d1e100",
       },
+      height: {
+        screen: "90vh",
+      },
     },
   },
   plugins: [],
