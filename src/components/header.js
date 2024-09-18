@@ -12,7 +12,7 @@ const Header = () => {
       <div className="relative h-16 flex items-center justify-between px-4 md:px-10">
         <div className="bg-pink-300 h-full w-1/3 md:w-1/6 flex items-center justify-center">
           <a href="home" className="text-sm md:text-lg font-bold">
-            Logo
+            ArtisTech
           </a>
         </div>
 
