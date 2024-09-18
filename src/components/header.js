@@ -53,7 +53,7 @@ const Header = () => {
             About
           </a>
 
-          <div className="relative group">
+          <div className="relative group bg-blue-400">
             <a
               href="#"
               className="block text-black text-sm md:text-lg py-2 md:py-0 w-full text-center"
