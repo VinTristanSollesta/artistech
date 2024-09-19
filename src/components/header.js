@@ -10,9 +10,9 @@ const Header = () => {
   return (
     <header className=" fixed bg-blue-400 container">
       <div className="relative h-16 flex items-center justify-between px-4 md:px-10">
-        <div className="bg-pink-300 h-full w-1/3 md:w-1/6 flex items-center justify-center">
+        <div className="bg-blue-400 h-full w-1/3 md:w-1/6 flex items-center justify-center">
           <a href="home" className="text-sm md:text-lg font-bold">
-            ArtisTech
+            <img className="h-16" src={require("../assets/artistech.png")} />
           </a>
         </div>
 
