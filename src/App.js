@@ -1,7 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/header";
 import * as React from "react";
+
+import Header from "./components/header";
+import Body from "./components/body";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -18,6 +20,7 @@ function App() {
   return (
     <BrowserRouter basename="/">
       <Header />
+      <Body />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />

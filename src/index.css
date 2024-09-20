@@ -11,6 +11,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bg-body {
+  position: fixed;
+  z-index: -3;
+  background-image: url("/src/assets/artistech-logo-pink192.png");
+  background-repeat: space;
+  filter: opacity(0.1);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
