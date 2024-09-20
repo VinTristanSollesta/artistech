@@ -8,9 +8,9 @@ const Header = () => {
   };
 
   return (
-    <header className=" fixed bg-blue-400 container">
+    <header className=" fixed bg-blue-400 container z-10">
       <div className="relative h-16 flex items-center justify-between px-4 md:px-10">
-        <div className="h-full w-1/3 md:w-1/6 flex items-center justify-center">
+        <div className=" flex items-center ">
           <a href="home" className="text-sm md:text-lg font-bold">
             <img className="h-16" src={require("../assets/artistech.png")} />
           </a>
@@ -61,34 +61,34 @@ const Header = () => {
               Guilds
             </a>
 
-            <div className="absolute left-0 hidden group-hover:block bg-white border border-gray-200 rounded shadow-md py-2 z-10">
+            <div className="absolute hidden group-hover:block bg-blue-400 border border-gray-200 rounded shadow-md z-10">
               <a
                 href="artisans"
-                className="block px-4 py-2 text-black hover:bg-gray-100"
+                className="block px-4 py-2 text-white hover:bg-gray-100 hover:text-black sm:w-full"
               >
                 ARTISANS
               </a>
               <a
                 href="artists"
-                className="block px-4 py-2 text-black hover:bg-gray-100"
+                className="block px-4 py-2 text-white hover:bg-gray-100 hover:text-black sm:w-full"
               >
                 ARTISTS
               </a>
               <a
                 href="collectors"
-                className="block px-4 py-2 text-black hover:bg-gray-100"
+                className="block px-4 py-2 text-white hover:bg-gray-100 hover:text-black sm:w-full"
               >
                 COLLECTORS
               </a>
               <a
                 href="cosplayers"
-                className="block px-4 py-2 text-black hover:bg-gray-100"
+                className="block px-4 py-2 text-white hover:bg-gray-100 hover:text-black sm:w-full"
               >
                 COSPLAYERS
               </a>
               <a
                 href="merchants"
-                className="block px-4 py-2 text-black hover:bg-gray-100"
+                className="block px-4 py-2 text-white hover:bg-gray-100 hover:text-black sm:w-full"
               >
                 MERCHANTS
               </a>

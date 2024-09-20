@@ -16,7 +16,7 @@ import Cosplayers from "./pages/Cosplayers";
 import Collectors from "./pages/Collectors";
 import Merchants from "./pages/Merchants";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter basename="/">
       <Header />
@@ -34,6 +34,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
